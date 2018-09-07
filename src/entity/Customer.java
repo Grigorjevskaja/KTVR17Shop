@@ -58,10 +58,7 @@ public class Customer {
         return true;
     }
 
-    @Override
-    public String toString() {
-        return "Customer{" + "id=" + id + ", name=" + name + ", suurname=" + suurname + ", money=" + money + '}';
-    }
+   
 
     public Customer(Long id, String name, String suurname, Integer money) {
         this.id = id;
@@ -102,7 +99,10 @@ public class Customer {
         this.suurname = suurname;
     }
 
-   
+    @Override
+    public String toString() {
+        return "Customer{" + "id=" + id + ", name=" + name + ", suurname=" + suurname + ", money=" + money + '}';
+    }
     
     
  }   

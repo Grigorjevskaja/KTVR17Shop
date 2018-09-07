@@ -29,7 +29,13 @@ public class KTVR17Shop {
         Calendar calendar = new GregorianCalendar();
         Purchase purchase = new Purchase(1L, p1, c1, calendar.getTime(), 2);
         c1.setMoney(c1.getMoney()-purchase.getProduct().getPrice()*purchase.getQuality());
-        p1.setCount(p1.getCount()-purchase.getProduct().getCount());
+        p1.setCount(p1.getCount()-purchase.getQuality());
+        System.out.println(p1.toString());
+        System.out.println(c1.toString());
+        System.out.println(purchase.toString());
+        System.out.println(calendar.toString());
         
     }
-}
+                
+    }
+
