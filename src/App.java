@@ -19,13 +19,13 @@ import java.util.Scanner;
 public class App {
    private List<Customer>customers = new ArrayList<>();
    private List<Product>products = new ArrayList<>();
-   private List<Purchase>purchase = new ArrayList<>();
+   private List<Purchase>purchases = new ArrayList<>();
    public void run(){
        String repeat = "r";
        Scanner scanner = new Scanner(System.in);
        int task;
        do{
-           System.out.println("Bibrat deistvie:");
+           System.out.println("Vibrat deistvie:");
            System.out.println("0-Vihod iz programmi:");
            System.out.println("1-Dobavit tovar:");
            System.out.println("2-Dobavit pokupatelja:");

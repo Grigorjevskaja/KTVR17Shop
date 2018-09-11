@@ -17,7 +17,7 @@ public class Purchase {
     private Product product;
     private Customer customer;
     private Date date;
-    private Integer quality;
+    private Integer quantity;
 
     public Purchase() {
     }
@@ -27,15 +27,15 @@ public class Purchase {
         this.product = product;
         this.customer = customer;
         this.date = date;
-        this.quality = quality;
+        this.quantity = quality;
     }
 
-    public Integer getQuality() {
-        return quality;
+    public Integer getQuantity() {
+        return quantity;
     }
 
-    public void setQuality(Integer quality) {
-        this.quality = quality;
+    public void setQuantity(Integer quality) {
+        this.quantity = quality;
     }
 
     public Long getId() {
@@ -77,7 +77,7 @@ public class Purchase {
         hash = 53 * hash + Objects.hashCode(this.product);
         hash = 53 * hash + Objects.hashCode(this.customer);
         hash = 53 * hash + Objects.hashCode(this.date);
-        hash = 53 * hash + Objects.hashCode(this.quality);
+        hash = 53 * hash + Objects.hashCode(this.quantity);
         return hash;
     }
 
@@ -105,7 +105,7 @@ public class Purchase {
         if (!Objects.equals(this.date, other.date)) {
             return false;
         }
-        if (!Objects.equals(this.quality, other.quality)) {
+        if (!Objects.equals(this.quantity, other.quantity)) {
             return false;
         }
         return true;
@@ -113,7 +113,7 @@ public class Purchase {
 
     @Override
     public String toString() {
-        return "Purchase{" + "id=" + id + ", product=" + product + ", customer=" + customer + ", date=" + date + ", quality=" + quality + '}';
+        return "Purchase{" + "id=" + id + ", product=" + product + ", customer=" + customer + ", date=" + date + ", quality=" + quantity + '}';
     }
     
     
